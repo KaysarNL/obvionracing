@@ -84,9 +84,12 @@
       nav ul.open{display:flex}
       nav ul li a{display:block;padding:14px 28px;border-bottom:1px solid rgba(255,255,255,.06)}
       .stats{gap:30px}
-      .agenda-item{flex-wrap:wrap;gap:12px;align-items:flex-start}
-      .agenda-info{flex:1 1 0;min-width:0}
-      .weather-widget,.route-widget{flex:1 1 80px;width:auto;margin-left:0}
+      .agenda-item{display:grid;grid-template-columns:auto 1fr auto;gap:8px 12px;align-items:start;padding:16px}
+      .agenda-date{grid-column:1;grid-row:1/3;align-self:start}
+      .agenda-info{grid-column:2/4;grid-row:1}
+      .weather-widget{grid-column:2;grid-row:2;width:auto;align-self:start;margin-left:0}
+      .route-widget{grid-column:3;grid-row:2;width:auto;align-self:start;margin-left:0}
+      .intro-text{margin-bottom:24px}
       .cards{display:none}
       .cards.open{display:grid}
       .cards-toggle{display:block}
