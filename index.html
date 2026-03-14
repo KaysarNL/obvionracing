@@ -21,11 +21,15 @@
     .hero h1 span{color:#ff7c07}
     .hero p{font-family:Asap,Arial,sans-serif;font-weight:400;font-size:1.2rem;color:#ddd;max-width:560px;margin:0 auto 40px;line-height:1.7}
     .hero-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-    .hero-weather{display:inline-flex;align-items:center;gap:8px;margin-top:22px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);padding:8px 20px;border-radius:30px;font-family:Asap,Arial,sans-serif;font-size:.88rem;color:#ccc;transition:all .4s}
-    .hero-weather.goed{background:rgba(34,197,94,.18);border-color:rgba(34,197,94,.5);color:#fff}
-    .hero-weather.matig{background:rgba(251,146,60,.18);border-color:rgba(251,146,60,.5);color:#fff}
-    .hero-weather.slecht{background:rgba(239,68,68,.18);border-color:rgba(239,68,68,.5);color:#fff}
-    .hw-dot{width:8px;height:8px;border-radius:50%;background:currentColor;flex-shrink:0;opacity:.8}
+    .weather-fab{position:fixed;bottom:24px;right:24px;z-index:500;display:flex;flex-direction:column;align-items:flex-end;}
+    .weather-fab-btn{width:56px;height:56px;border-radius:50%;background:#a61462;color:#fff;border:none;cursor:pointer;font-size:1.7rem;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(0,0,0,.35);transition:transform .2s,background .2s;}
+    .weather-fab-btn:hover{transform:scale(1.1);background:#7e0f4b;}
+    .weather-fab-card{display:none;background:#1a0010;color:#fff;border-radius:14px;padding:18px 20px;margin-bottom:12px;min-width:190px;box-shadow:0 8px 32px rgba(0,0,0,.5);border:1px solid rgba(166,20,98,.5);text-align:center;}
+    .weather-fab-card.open{display:block;}
+    .fab-emoji{font-size:2.2rem;line-height:1;margin-bottom:8px;}
+    .fab-verdict{font-family:Asap,Arial,sans-serif;font-size:.92rem;font-weight:700;color:#fff;margin-bottom:8px;line-height:1.3;}
+    .fab-details{font-family:Asap,Arial,sans-serif;font-size:.8rem;color:#bbb;}
+    .fab-label{font-family:Asap,Arial,sans-serif;font-size:.65rem;color:#888;letter-spacing:1px;text-transform:uppercase;margin-top:8px;border-top:1px solid rgba(255,255,255,.08);padding-top:8px;}
     .btn{padding:14px 32px;border-radius:6px;font-family:Asap,Arial,sans-serif;font-size:1rem;font-weight:700;text-decoration:none;letter-spacing:1px;text-transform:uppercase;transition:all .2s;cursor:pointer;border:none}
     .btn-primary{background:#a61462;color:#fff}
     .btn-primary:hover{background:#7e0f4b;transform:translateY(-2px)}
@@ -115,7 +119,6 @@
       <a href="#join" class="btn btn-primary">Word lid</a>
       <a href="#agenda" class="btn btn-outline">Bekijk onze agenda</a>
     </div>
-    <div class="hero-weather" id="hero-weather"><span class="hw-dot"></span><span class="hw-text">🚴 Fietsweer laden...</span></div>
   </div>
   <div class="stats">
     <div class="stat"><div class="stat-number">22</div><div class="stat-label">Leden</div></div>
@@ -161,6 +164,15 @@
   <footer>
     <p>&copy; 2026 Obvion Racing Team · E-mail: <a href="mailto:info@obvionracingteam.nl" style="color:#ff7c07;text-decoration:none;">info@obvionracingteam.nl</a> · Fietsen met plezier <span>🚴</span></p>
   </footer>
+  <div class="weather-fab" id="weather-fab">
+    <div class="weather-fab-card" id="weather-fab-card">
+      <div class="fab-emoji" id="fab-emoji">🚴</div>
+      <div class="fab-verdict" id="fab-verdict">Laden...</div>
+      <div class="fab-details" id="fab-details"></div>
+      <div class="fab-label">Fietsweer Heerlen</div>
+    </div>
+    <button class="weather-fab-btn" id="weather-fab-btn" onclick="toggleFab()" aria-label="Fietsweer">🚴</button>
+  </div>
   <script>
     function weerInfo(c){
   if(c===0)return{icon:'\u2600\uFE0F',desc:'Helder'};
@@ -193,7 +205,9 @@ document.querySelectorAll('.weather-widget[data-date]').forEach(laadWeer);
     function toggleNav(){var m=document.getElementById("nav-menu");var h=document.getElementById("hamburger");m.classList.toggle("open");h.classList.toggle("open");}
     document.querySelectorAll("#nav-menu a").forEach(function(a){a.addEventListener("click",function(){document.getElementById("nav-menu").classList.remove("open");document.getElementById("hamburger").classList.remove("open");});});
     function toggleCards(btn){var cards=btn.previousElementSibling;cards.classList.toggle("open");btn.textContent=cards.classList.contains("open")?"Lees minder...":"Lees meer...";}
-    (function(){var el=document.getElementById("hero-weather");if(!el)return;fetch("https://api.open-meteo.com/v1/forecast?latitude=50.8839&longitude=5.9819&current=temperature_2m,precipitation,wind_speed_10m,weather_code&timezone=Europe/Amsterdam").then(function(r){return r.json();}).then(function(d){var c=d.current;var temp=Math.round(c.temperature_2m);var wind=Math.round(c.wind_speed_10m);var precip=c.precipitation;var code=c.weather_code;var emoji,verdict,cls;if(code>=95){emoji="⛈️";verdict="Onweer – blijf thuis";cls="slecht";}else if(code>=71&&code<=77){emoji="❄️";verdict="Sneeuw – Zwift dag!";cls="slecht";}else if((precip>0.5||code>=63)&&wind>35){emoji="🌧️";verdict="Regen én wind – Zwift!";cls="slecht";}else if(precip>0.5||code>=63){emoji="🌧️";verdict="Regenjas aan of Zwift";cls="matig";}else if(wind>40){emoji="💨";verdict="Stevige wind vandaag";cls="matig";}else if(temp<3){emoji="🥶";verdict="Brrr – goed inpakken!";cls="matig";}else if(temp>30){emoji="🥵";verdict="Heet – vroeg vertrekken!";cls="matig";}else if(wind>25||precip>0||code>=51){emoji="🚴";verdict="Kan ermee door";cls="matig";}else{emoji="🚴";verdict="Perfect fietsweer!";cls="goed";}el.className="hero-weather "+cls;el.querySelector(".hw-text").textContent=emoji+" "+verdict+" · "+temp+"°C · Wind "+wind+" km/h";}).catch(function(){el.style.display="none";});})();
+    function toggleFab(){var c=document.getElementById("weather-fab-card");if(c)c.classList.toggle("open");}
+    document.addEventListener("click",function(e){var fab=document.getElementById("weather-fab");if(fab&&!fab.contains(e.target)){var c=document.getElementById("weather-fab-card");if(c)c.classList.remove("open");}});
+    (function(){fetch("https://api.open-meteo.com/v1/forecast?latitude=50.8839&longitude=5.9819&current=temperature_2m,precipitation,wind_speed_10m,weather_code&timezone=Europe/Amsterdam").then(function(r){return r.json();}).then(function(d){var c=d.current;var temp=Math.round(c.temperature_2m);var wind=Math.round(c.wind_speed_10m);var precip=c.precipitation;var code=c.weather_code;var emoji,verdict;if(code>=95){emoji="⛈️";verdict="Onweer – blijf thuis";}else if(code>=71&&code<=77){emoji="❄️";verdict="Sneeuw – Zwift dag!";}else if((precip>0.5||code>=63)&&wind>35){emoji="🌧️";verdict="Regen én wind – Zwift!";}else if(precip>0.5||code>=63){emoji="🌧️";verdict="Regenjas aan of Zwift";}else if(wind>40){emoji="💨";verdict="Stevige wind vandaag";}else if(temp<3){emoji="🥶";verdict="Brrr – goed inpakken!";}else if(temp>30){emoji="🥵";verdict="Heet – vroeg vertrekken!";}else if(wind>25||precip>0||code>=51){emoji="🚴";verdict="Kan ermee door";}else{emoji="🚴";verdict="Perfect fietsweer!";}var btn=document.getElementById("weather-fab-btn");var fe=document.getElementById("fab-emoji");var fv=document.getElementById("fab-verdict");var fd=document.getElementById("fab-details");if(btn)btn.textContent=emoji;if(fe)fe.textContent=emoji;if(fv)fv.textContent=verdict;if(fd)fd.textContent=temp+"°C · Wind "+wind+" km/h";}).catch(function(){var fab=document.getElementById("weather-fab");if(fab)fab.style.display="none";});})();
   </script>
 </body>
 </html>
