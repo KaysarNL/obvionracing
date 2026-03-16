@@ -1,0 +1,108 @@
+{
+  "clubnaam": "Obvion Racing Team",
+  "email": "info@obvionracingteam.nl",
+  "opgericht": "2026",
+  "stat-leden": "22",
+  "stat-ritten": "0x",
+  "stat-km": "12k+",
+  "strava-embed": "https://www.strava.com/clubs/102493/latest-rides/6e8915f2c72396f86a676130943db13826b80e52?show_rides=false",
+  "strava-rides": "false",
+  "over-kop": "Passie voor de fiets, samen sterk",
+  "over-intro": "Het Obvion Racing Team is een actieve wielrenclub van Obvion collega's die verbinding en plezier vooropstellen.",
+  "over-card1-icon": "🏆",
+  "over-card1-titel": "Competitief & Recreatief",
+  "over-card1-tekst": "Competitief tijdens de laatste 300 meter. De overige kilometers rijden we voor ontspanning en plezier.",
+  "over-card1-tag": "Voor elk niveau",
+  "over-card2-icon": "👥",
+  "over-card2-titel": "Sterke Club Community",
+  "over-card2-tekst": "Meer dan 20 leden die regelmatig samen trainen, afspreken en ervaringen delen.",
+  "over-card2-tag": "Hechte groep",
+  "over-card3-icon": "🗺️",
+  "over-card3-titel": "Gevarieerde Tochten",
+  "over-card3-tekst": "Van vlakke rondjes tot uitdagende klimtochten. Altijd iets nieuws.",
+  "over-card3-tag": "Meerdere routes",
+  "ritten-kop": "Gevarieerde ritten",
+  "ritten-intro": "We rijden diverse ritten door het jaar, voor alle niveaus en doelen.",
+  "ritten-card1-icon": "🏢",
+  "ritten-card1-titel": "Rondjes rond het werk",
+  "ritten-card1-tekst": "Af en toe een rondje 'after-work', alleen bij mooi weer.",
+  "ritten-card1-tag": "Alle niveaus",
+  "ritten-card2-icon": "🚵🏻‍♂️",
+  "ritten-card2-titel": "Toertochten",
+  "ritten-card2-tekst": "De hoogtepunten voor onze club. Ontspannen sociale ritten, voor iedereen geschikt. In Limburg en daarbuiten.",
+  "ritten-card2-tag": "Alle niveaus",
+  "ritten-card3-icon": "💪🏼",
+  "ritten-card3-titel": "Trainen",
+  "ritten-card3-tekst": "Wanneer het koud is buiten ieder voor zich. Binnen in groepsverband op de Zwift. Ride On!",
+  "ritten-card3-tag": "Alle Niveaus",
+  "join-titel": "Klaar om mee te rijden?",
+  "join-tekst": "Word lid van het Obvion Racing Team en ervaar het plezier van samen fietsen",
+  "join-knop": "Stuur ons een bericht",
+  "og-url": "https://www.obvionracingteam.nl",
+  "og-beschrijving": "Obvion Racing Team – een sportieve wielrenclub uit Heerlen. Samen trainen, racen en genieten.",
+  "goatcounter-code": "ort",
+  "github-owner": "KaysarNL",
+  "github-repo": "obvionracing",
+  "_erl": [
+    {
+      "jaar": "2026",
+      "icoon": "🌿",
+      "naam": "Groen doen!",
+      "omschrijving": "In de week van 9 maart fietsten we 50kg CO2 reductie bij elkaar",
+      "cat": "MVO"
+    }
+  ],
+  "_ev": [
+    {
+      "datum": "2026-03-22",
+      "badge": "Toertocht",
+      "titel": "Test met weerbericht en voorbeeld GPX bestand",
+      "desc": "100 km - Vertrek 08:00 - Parkeerplaats station",
+      "loc": "50.85,5.69",
+      "gpx": "Classico Boretti 2022 - 30KM DEF.gpx"
+    },
+    {
+      "datum": "2026-04-06",
+      "badge": "Toertocht",
+      "titel": "Volta / NXT Classic",
+      "desc": "Start van ons toerritten seizoen 🥳 - 65KM 🚵🏻‍♂️ - 08.30 ontbijt / ☕️ Heerlijkheid Breust te Eijsden",
+      "loc": "50.85,5.69",
+      "gpx": ""
+    },
+    {
+      "datum": "2026-04-25",
+      "badge": "Toertocht",
+      "titel": "Grenspalenklassieker",
+      "desc": "Reusel",
+      "loc": "51.44,5.48",
+      "gpx": ""
+    },
+    {
+      "datum": "2026-05-30",
+      "badge": "Toertocht",
+      "titel": "Obvion Limburgs Mooiste",
+      "desc": "Ons Main Event 🤩 - Let's Go!!!",
+      "loc": "50.85,5.69",
+      "gpx": ""
+    }
+  ],
+  "_foto": [
+    {
+      "naam": "Rico.jpg",
+      "caption": "Club Mascotte, moe maar voldaan 😮‍💨"
+    }
+  ],
+  "_dl": [],
+  "_nieuws": [
+    {
+      "datum": "2026-03-13",
+      "titel": "Volta",
+      "tekst": "De inschrijving voor de Volta is voltooid. We maken ons klaar voor de VIP 🤩 opening van het seizoen 2026 op 2e Paasdag!"
+    },
+    {
+      "datum": "2026-03-17",
+      "titel": "Site Live 🥳",
+      "tekst": "Onze mooie fietsclub en de belangrijkse informatie verdienen een plek op het web. Bij deze!"
+    }
+  ]
+}
