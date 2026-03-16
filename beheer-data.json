@@ -97,12 +97,16 @@
     {
       "datum": "2026-03-13",
       "titel": "Volta",
-      "tekst": "De inschrijving voor de Volta is voltooid. We maken ons klaar voor de VIP 🤩 opening van het seizoen 2026 op 2e Paasdag!"
+      "tekst": "De inschrijving voor de Volta is voltooid. We maken ons klaar voor de VIP 🤩 opening van het seizoen 2026 op 2e Paasdag!",
+      "extra": "",
+      "img": "Rico.JPG"
     },
     {
       "datum": "2026-03-17",
       "titel": "Site Live 🥳",
-      "tekst": "Onze mooie fietsclub en de belangrijkse informatie verdienen een plek op het web. Bij deze!"
+      "tekst": "Onze mooie fietsclub en de belangrijkse informatie verdienen een plek op het web. Bij deze!",
+      "extra": "",
+      "img": ""
     }
   ]
 }
