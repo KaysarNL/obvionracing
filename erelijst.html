@@ -4,54 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>Foto's – Obvion Racing Team</title>
+  <meta property="og:url" content="https://www.obvionracingteam.nl/erelijst.html">
+  <title>Erelijst – Obvion Racing Team</title>
   <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap" rel="stylesheet">
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:Asap,Arial,sans-serif;color:#343434;background:#f8f8f8}
+    body{font-family:Asap,Arial,sans-serif;color:#343434;background:#0d0008}
     nav{background:#1a0010;padding:16px 40px;height:110px;overflow:visible;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
     .logo img{height:156px;width:auto}
     nav ul{list-style:none;display:flex;gap:30px}
     nav a{color:#ccc;text-decoration:none;font-family:Asap,Arial,sans-serif;font-size:.95rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;transition:color .2s}
-    nav a:hover{color:#ff7c07}
-    nav a.active{color:#ff7c07}
-    .fotos-hero{background:linear-gradient(135deg,#1a0010 0%,#3d0030 50%,#1a0010 100%);color:#fff;text-align:center;padding:60px 20px 50px;position:relative;overflow:hidden}
-    .fotos-hero::before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:repeating-linear-gradient(45deg,transparent,transparent 40px,rgba(166,20,98,.05) 40px,rgba(166,20,98,.05) 80px);pointer-events:none}
+    nav a:hover,nav a.active{color:#ff7c07}
+    .erl-hero{background:linear-gradient(135deg,#1a0010 0%,#3d0030 50%,#1a0010 100%);color:#fff;text-align:center;padding:84px 20px 72px;position:relative;overflow:hidden}
+    .erl-hero::before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:repeating-linear-gradient(45deg,transparent,transparent 40px,rgba(166,20,98,.05) 40px,rgba(166,20,98,.05) 80px);pointer-events:none}
     .hero-badge{display:inline-block;background:#ff7c07;color:#fff;padding:6px 18px;border-radius:20px;font-size:.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px}
-    .fotos-hero h1{font-family:Asap,Arial,sans-serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:700;letter-spacing:-1px;line-height:1.1}
-    .fotos-hero h1 span{color:#ff7c07}
-    .gallery-section{max-width:1200px;margin:0 auto;padding:60px 40px}
-    .section-label{color:#a61462;font-size:.8rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px}
-    h2{font-family:Asap,Arial,sans-serif;font-size:2.2rem;font-weight:700;color:#a61462;margin-bottom:36px;line-height:1.2}
-    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
-    .gallery-item{border-radius:10px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.08);cursor:pointer;transition:transform .2s,box-shadow .2s;position:relative;background:#1a0010}
-    .gallery-item:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,.15)}
-    .gallery-item img{width:100%;height:260px;object-fit:cover;display:block;transition:opacity .2s}
-    .gallery-item:hover img{opacity:.9}
-    .gallery-item .caption{padding:14px 16px;background:#fff;font-size:.9rem;color:#555;line-height:1.4}
-    .gallery-empty{text-align:center;padding:80px 20px;color:#999}
-    .gallery-empty .empty-icon{font-size:4rem;margin-bottom:20px}
-    .gallery-empty h3{font-size:1.4rem;color:#ccc;margin-bottom:10px}
-    .gallery-empty p{font-size:.95rem;max-width:400px;margin:0 auto}
-    .lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:9999;align-items:center;justify-content:center}
-    .lightbox.open{display:flex}
-    .lightbox-inner{position:relative;max-width:90vw;max-height:90vh;display:flex;align-items:center;justify-content:center}
-    .lightbox-inner img{max-width:90vw;max-height:82vh;border-radius:6px;object-fit:contain;display:block;box-shadow:0 8px 40px rgba(0,0,0,.6)}
-    .lightbox-caption{position:absolute;bottom:-36px;left:0;right:0;text-align:center;color:#ccc;font-size:.9rem}
-    .lb-close{position:fixed;top:20px;right:28px;font-size:2.2rem;color:#fff;cursor:pointer;background:none;border:none;line-height:1;opacity:.7;transition:opacity .2s}
-    .lb-close:hover{opacity:1}
-    .lb-prev,.lb-next{position:fixed;top:50%;transform:translateY(-50%);font-size:2.5rem;color:#fff;cursor:pointer;background:rgba(255,255,255,.08);border:none;padding:12px 18px;border-radius:6px;transition:background .2s;line-height:1}
-    .lb-prev{left:16px}
-    .lb-next{right:16px}
-    .lb-prev:hover,.lb-next:hover{background:rgba(255,255,255,.18)}
-    footer{background:#0d0d0d;color:#555;text-align:center;padding:30px 20px;font-size:.9rem}
+    .erl-hero h1{font-family:Asap,Arial,sans-serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:700;letter-spacing:-1px;line-height:1.1}
+    .erl-hero h1 span{color:#ff7c07}
+    .erl-section{max-width:1100px;margin:0 auto;padding:60px 40px}
+    .section-label{display:inline-block;background:rgba(255,124,7,.15);color:#ff7c07;font-family:Asap,Arial,sans-serif;font-size:.75rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:18px}
+    h2{font-family:Asap,Arial,sans-serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:700;color:#fff;margin-bottom:36px;line-height:1.2}
+    .erl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+    .erl-card{background:rgba(255,255,255,.04);border-radius:10px;padding:24px;position:relative;transition:transform .2s,box-shadow .2s}
+    .erl-card:hover{transform:translateY(-4px);box-shadow:0 8px 30px rgba(0,0,0,.4)}
+    .erl-year{position:absolute;top:16px;right:16px;background:rgba(255,255,255,.07);color:#aaa;font-family:Asap,Arial,sans-serif;font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:20px}
+    .erl-icon{font-size:2.2rem;margin-bottom:12px;line-height:1}
+    .erl-name{font-family:Asap,Arial,sans-serif;font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:8px;padding-right:52px;line-height:1.3}
+    .erl-desc{font-family:Asap,Arial,sans-serif;font-size:.88rem;color:#888;line-height:1.6;margin-bottom:14px}
+    .erl-badge{display:inline-block;background:rgba(255,255,255,.06);font-family:Asap,Arial,sans-serif;font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:20px}
+    footer{background:#0a0005;color:#555;text-align:center;padding:30px 20px;font-size:.9rem;border-top:1px solid rgba(255,255,255,.05)}
     footer span{color:#ff7c07}
     .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;z-index:200}
     .hamburger span{display:block;width:26px;height:3px;background:#ccc;border-radius:2px;transition:all .3s}
     .hamburger.open span:nth-child(1){transform:translateY(8px) rotate(45deg)}
     .hamburger.open span:nth-child(2){opacity:0}
     .hamburger.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
-    @media(max-width:700px){nav{padding:16px 20px;height:70px}.logo img{height:90px}.hamburger{display:flex}nav ul{display:none;position:absolute;top:70px;left:0;right:0;background:#1a0010;flex-direction:column;gap:0;padding:10px 0;z-index:150;box-shadow:0 8px 20px rgba(0,0,0,.4)}nav ul.open{display:flex}nav ul li a{display:block;padding:14px 28px;border-bottom:1px solid rgba(255,255,255,.06)}.gallery-grid{grid-template-columns:1fr}.gallery-section{padding:40px 20px}}
+    @media(max-width:700px){nav{padding:16px 20px;height:70px}.logo img{height:90px}.hamburger{display:flex}nav ul{display:none;position:absolute;top:70px;left:0;right:0;background:#1a0010;flex-direction:column;gap:0;padding:10px 0;z-index:150;box-shadow:0 8px 20px rgba(0,0,0,.4)}nav ul.open{display:flex}nav ul li a{display:block;padding:14px 28px;border-bottom:1px solid rgba(255,255,255,.06)}.erl-grid{grid-template-columns:1fr}.erl-section{padding:40px 20px}}
   </style>
 </head>
 <body>
@@ -61,41 +48,26 @@
     <ul id="nav-menu">
       <li><a href="index.html#nieuws">Nieuws</a></li>
       <li><a href="index.html#agenda">Agenda</a></li>
-      <li><a href="fotos.html" class="active">Foto's</a></li>
-      <li><a href="erelijst.html">Erelijst</a></li>
+      <li><a href="fotos.html">Foto's</a></li>
+      <li><a href="erelijst.html" class="active">Erelijst</a></li>
       <li><a href="mailto:info@obvionracingteam.nl?subject=Graag%20contact">Contact</a></li>
     </ul>
   </nav>
-  <div class="fotos-hero">
-    <div class="hero-badge">📸 Fotogallerij</div>
-    <h1>Onze <span>Foto's</span></h1>
+  <div class="erl-hero">
+    <div class="hero-badge">🏅 Prestaties</div>
+    <h1>Onze <span>Erelijst</span></h1>
   </div>
-  <div class="gallery-section">
-    <div class="section-label">Fotogallerij</div>
-    <h2>Foto's van onze ritten</h2>
-    <div class="gallery-grid" id="gallery">
-      <div class="gallery-item" onclick="openLb(0)"><img src="fotos/Rico.jpg" alt="Club Mascotte, moe maar voldaan 😮‍💨" loading="lazy"><div class="caption">Club Mascotte, moe maar voldaan 😮‍💨</div></div>
+  <div class="erl-section">
+    <div class="section-label">🏅 Erelijst</div>
+    <h2>Onze prestaties</h2>
+    <div class="erl-grid">
+      <div class="erl-card" style="border-left:4px solid #ff7c07;"><div class="erl-year">2026</div><div class="erl-icon">🏆</div><div class="erl-name">Naam / Evenement</div><div class="erl-desc">Korte omschrijving van de prestatie</div><span class="erl-badge" style="color:#ff7c07;">Wedstrijd</span></div>
     </div>
-  </div>
-  <div class="lightbox" id="lightbox">
-    <button class="lb-close" onclick="closeLb()" title="Sluiten">&times;</button>
-    <button class="lb-prev" onclick="moveLb(-1)" title="Vorige">&#8249;</button>
-    <div class="lightbox-inner"><img id="lb-img" src="" alt=""><div class="lightbox-caption" id="lb-caption"></div></div>
-    <button class="lb-next" onclick="moveLb(1)" title="Volgende">&#8250;</button>
   </div>
   <footer>
     <p>&copy; 2026 Obvion Racing Team · <a href="index.html" style="color:#ff7c07;text-decoration:none;">Terug naar homepage</a> <span>🚴</span></p>
   </footer>
   <script>
-    var fotos = [
-      {src:"fotos/Rico.jpg",caption:"Club Mascotte, moe maar voldaan 😮‍💨"}
-    ];
-    var cur = 0;
-    function openLb(i){cur=i;var lb=document.getElementById("lightbox");lb.className="lightbox open";document.getElementById("lb-img").src=fotos[i].src;document.getElementById("lb-caption").textContent=fotos[i].caption;}
-    function closeLb(){document.getElementById("lightbox").className="lightbox";}
-    function moveLb(d){cur=(cur+d+fotos.length)%fotos.length;openLb(cur);}
-    document.addEventListener("keydown",function(e){if(document.getElementById("lightbox").className.indexOf("open")>-1){if(e.key==="ArrowLeft")moveLb(-1);else if(e.key==="ArrowRight")moveLb(1);else if(e.key==="Escape")closeLb();}});
-    document.getElementById("lightbox").addEventListener("click",function(e){if(e.target===this)closeLb();});
     function toggleNav(){var m=document.getElementById("nav-menu");var h=document.getElementById("hamburger");m.classList.toggle("open");h.classList.toggle("open");}
     document.querySelectorAll("#nav-menu a").forEach(function(a){a.addEventListener("click",function(){document.getElementById("nav-menu").classList.remove("open");document.getElementById("hamburger").classList.remove("open");});});
   </script>
