@@ -8,7 +8,7 @@
   "strava-embed": "https://www.strava.com/clubs/102493/latest-rides/6e8915f2c72396f86a676130943db13826b80e52?show_rides=false",
   "strava-rides": "false",
   "over-kop": "Passie voor de fiets, samen sterk",
-  "over-intro": "Het Obvion Racing Team is een actieve wielrenclub van Obvion collega's die verbinding en plezier vooropstellen.",
+  "over-intro": "Het Obvion Racing Team is een actieve fietsclub van Obvion collega's die verbinding en plezier vooropstellen.",
   "over-card1-icon": "🏆",
   "over-card1-titel": "Competitief & Recreatief",
   "over-card1-tekst": "Competitief tijdens de laatste 300 meter. De overige kilometers rijden we voor ontspanning en plezier.",
@@ -33,13 +33,13 @@
   "ritten-card2-tag": "Alle niveaus",
   "ritten-card3-icon": "💪🏼",
   "ritten-card3-titel": "Trainen",
-  "ritten-card3-tekst": "Wanneer het koud is buiten ieder voor zich. Binnen in groepsverband op de Zwift. Ride On!",
+  "ritten-card3-tekst": "Wanneer het koud en vroeg donker is, buiten ieder voor zich. Binnen in groepsverband op de Zwift. Ride On!",
   "ritten-card3-tag": "Alle Niveaus",
   "join-titel": "Klaar om mee te rijden?",
   "join-tekst": "Word lid van het Obvion Racing Team en ervaar het plezier van samen fietsen",
   "join-knop": "Stuur ons een bericht",
   "og-url": "https://www.obvionracingteam.nl",
-  "og-beschrijving": "Obvion Racing Team – een sportieve wielrenclub uit Heerlen. Samen trainen, racen en genieten.",
+  "og-beschrijving": "Obvion Racing Team – een sportieve fietsclub uit Heerlen. Samen trainen, racen en genieten.",
   "goatcounter-code": "ort",
   "github-owner": "KaysarNL",
   "github-repo": "obvionracing",
@@ -56,8 +56,8 @@
     {
       "datum": "2026-03-22",
       "badge": "Toertocht",
-      "titel": "Test met weerbericht en voorbeeld GPX bestand",
-      "desc": "100 km - Vertrek 08:00 - Parkeerplaats station",
+      "titel": "Testevent met weerbericht en voorbeeld GPX bestand",
+      "desc": "100 km - Vertrek 08:00 - Parkeerplaats station - Collectieve inschrijving",
       "loc": "50.85,5.69",
       "gpx": "Classico Boretti 2022 - 30KM DEF.gpx"
     },
@@ -65,7 +65,7 @@
       "datum": "2026-04-06",
       "badge": "Toertocht",
       "titel": "Volta / NXT Classic",
-      "desc": "Start van ons toerritten seizoen 🥳 - 65KM 🚵🏻‍♂️ - 08.30 ontbijt / ☕️ Heerlijkheid Breust te Eijsden",
+      "desc": "Start van ons toertochten seizoen 🥳 - 65KM 🚵🏻‍♂️ - 08.30 ontbijt / ☕️ Heerlijkheid Breust te Eijsden - Collectieve inschrijving",
       "loc": "50.85,5.69",
       "gpx": ""
     },
@@ -73,7 +73,7 @@
       "datum": "2026-04-25",
       "badge": "Toertocht",
       "titel": "Grenspalenklassieker",
-      "desc": "Reusel",
+      "desc": "Reusel - 90km 🚴‍♂️ - Individuele inschrijving",
       "loc": "51.44,5.48",
       "gpx": ""
     },
@@ -81,7 +81,7 @@
       "datum": "2026-05-30",
       "badge": "Toertocht",
       "titel": "Obvion Limburgs Mooiste",
-      "desc": "Ons Main Event 🤩 - Let's Go!!",
+      "desc": "Ons Main Event 🤩 - Let's Go!! - Individuele inschrijving via intranet ",
       "loc": "50.85,5.69",
       "gpx": ""
     }
@@ -102,7 +102,7 @@
       "img": ""
     },
     {
-      "datum": "2026-03-17",
+      "datum": "2026-03-18",
       "titel": "Site Live 🥳",
       "tekst": "Onze mooie fietsclub en de belangrijkse informatie verdienen een plek op het web. Bij deze!",
       "extra": "",
