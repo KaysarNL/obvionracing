@@ -21,7 +21,7 @@
     .gb-section{max-width:800px;margin:0 auto;padding:60px 40px}
     .section-label{display:inline-block;background:rgba(255,124,7,.15);color:#ff7c07;font-family:Asap,Arial,sans-serif;font-size:.75rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:18px}
     h2{font-family:Asap,Arial,sans-serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:700;color:#a61462;margin-bottom:36px;line-height:1.2}
-    #cusdis_thread{color:#333}    #cusdis_thread iframe{min-height:600px;width:100%!important}
+    .commentbox .reply-form{max-height:none!important;overflow:visible!important}
     footer{background:#0d0d0d;color:#555;text-align:center;padding:30px 20px;font-size:.9rem}
     footer span{color:#ff7c07}
     .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;z-index:200}
@@ -52,8 +52,9 @@
   <div class="gb-section">
     <div class="section-label">✍️ Gastenboek</div>
     <h2>Reacties van bezoekers</h2>
-    <div id="cusdis_thread" data-host="https://cusdis.com" data-app-id="023d5478-8a0f-4e7e-bd61-ada126a351f4" data-page-id="gastenboek" data-page-url="https://www.obvionracingteam.nl/gastenboek.html" data-page-title="Gastenboek – Obvion Racing Team"></div>
-    <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+    <div class="commentbox"></div>
+    <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+    <script>commentBox('5703216800989184-proj')</script>
   </div>
   <footer>
     <p>&copy; 2026 Obvion Racing Team · <a href="index.html" style="color:#ff7c07;text-decoration:none;">Terug naar homepage</a> <span>🚴</span></p>
