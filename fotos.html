@@ -76,6 +76,7 @@
     <h2>Foto's van onze ritten</h2>
     <div class="gallery-grid" id="gallery">
       <div class="gallery-item" onclick="openLb(0)"><img src="fotos/Rico.jpg" alt="Club Mascotte, moe maar voldaan 😮‍💨" loading="lazy"><div class="caption">Club Mascotte, moe maar voldaan 😮‍💨</div></div>
+      <div class="gallery-item" onclick="openLb(1)"><img src="fotos/NXTClassic.jpeg" alt="Foto beschrijving" loading="lazy"><div class="caption">Foto beschrijving</div></div>
     </div>
   </div>
   <div class="lightbox" id="lightbox">
@@ -89,7 +90,8 @@
   </footer>
   <script>
     var fotos = [
-      {src:"fotos/Rico.jpg",caption:"Club Mascotte, moe maar voldaan 😮‍💨"}
+      {src:"fotos/Rico.jpg",caption:"Club Mascotte, moe maar voldaan 😮‍💨"},
+      {src:"fotos/NXTClassic.jpeg",caption:"Foto beschrijving"}
     ];
     var cur = 0;
     function openLb(i){cur=i;var lb=document.getElementById("lightbox");lb.className="lightbox open";document.getElementById("lb-img").src=fotos[i].src;document.getElementById("lb-caption").textContent=fotos[i].caption;}
