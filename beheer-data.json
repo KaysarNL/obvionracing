@@ -57,6 +57,13 @@
       "naam": "Groen doen!",
       "omschrijving": "In de week van 9 maart fietsten we 50kg CO2 reductie bij elkaar",
       "cat": "MVO"
+    },
+    {
+      "jaar": "2026",
+      "icoon": "😄",
+      "naam": "Ralph / Ausdauer",
+      "omschrijving": "3x pech, maar blijven gaan. Dan ben je een echte 💪🏼",
+      "cat": "Prestatie"
     }
   ],
   "_ev": [
@@ -116,8 +123,8 @@
     },
     {
       "datum": "2026-04-09",
-      "titel": "Seizoen afgetrapt",
-      "tekst": "Met 10 collega’s genoten we van een prachtige rit door het Zuid-Limburgse landschap. Met de lentezon op ons gezicht en volop gezelligheid onderweg zat de sfeer er vanaf het begin goed in. De route stelde niet teleur: mooie beklimmingen, fraaie vergezichten en een parcours dat bleef verrassen 🤩 ",
+      "titel": "Seizoen heerlijk afgetrapt 👊🏻",
+      "tekst": "Met 10 collega’s genoten we van de NXT Classic: een prachtige rit door het Zuid-Limburgse landschap. Met de lentezon op ons gezicht 😎 en volop gezelligheid onderweg zat de sfeer er vanaf het begin goed in. De route stelde niet teleur: mooie beklimmingen, fraaie vergezichten en een parcours dat bleef verrassen.",
       "extra": "",
       "img": ""
     }
