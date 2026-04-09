@@ -3,7 +3,7 @@
   "email": "info@obvionracingteam.nl",
   "opgericht": "2026",
   "stat-leden": "22",
-  "stat-ritten": "0x",
+  "stat-ritten": "1x",
   "stat-km": "12k+",
   "strava-embed": "https://www.strava.com/clubs/102493/latest-rides/6e8915f2c72396f86a676130943db13826b80e52?show_rides=false",
   "strava-rides": "false",
@@ -61,15 +61,6 @@
   ],
   "_ev": [
     {
-      "datum": "2026-04-06",
-      "badge": "Toertocht",
-      "titel": "Volta / NXT Classic",
-      "desc": "Start van ons toertochten seizoen 🥳 - 65KM 🚵🏻‍♂️ - 08.30 ontbijt / ☕️ Heerlijkheid Breust te Eijsden",
-      "loc": "50.85,5.69",
-      "gpx": "NXT_Classic_2026_-_65_KM_.gpx",
-      "inschrijving": "Collectief"
-    },
-    {
       "datum": "2026-04-25",
       "badge": "Toertocht",
       "titel": "Grenspalenklassieker",
@@ -86,12 +77,25 @@
       "loc": "50.85,5.69",
       "gpx": "",
       "inschrijving": "Individueel via intranet"
+    },
+    {
+      "datum": "2026-06-19",
+      "badge": "Toertocht",
+      "titel": "Climate Classic",
+      "desc": "Samen fietsen we voor meer klimaatactie",
+      "loc": "52.09,5.12",
+      "gpx": "",
+      "inschrijving": "Collectief"
     }
   ],
   "_foto": [
     {
       "naam": "Rico.jpg",
       "caption": "Club Mascotte, moe maar voldaan 😮‍💨"
+    },
+    {
+      "naam": "NXTClassic.jpeg",
+      "caption": "Foto beschrijving"
     }
   ],
   "_dl": [],
@@ -107,6 +111,13 @@
       "datum": "2026-03-18",
       "titel": "Site Live 🥳",
       "tekst": "Onze mooie fietsclub en de belangrijkse informatie verdienen een plek op het web. Bij deze!",
+      "extra": "",
+      "img": ""
+    },
+    {
+      "datum": "2026-04-09",
+      "titel": "Seizoen afgetrapt",
+      "tekst": "Met 10 collega’s genoten we van een prachtige rit door het Zuid-Limburgse landschap. Met de lentezon op ons gezicht en volop gezelligheid onderweg zat de sfeer er vanaf het begin goed in. De route stelde niet teleur: mooie beklimmingen, fraaie vergezichten en een parcours dat bleef verrassen. ",
       "extra": "",
       "img": ""
     }
