@@ -6,30 +6,7 @@
   <title>Gastenboek – Obvion Racing Team</title>
   <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:Asap,Arial,sans-serif;color:#343434;background:#f8f8f8}
-    nav{background:#1a0010;padding:16px 40px;height:110px;overflow:visible;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
-    .logo img{height:156px;width:auto}
-    nav ul{list-style:none;display:flex;gap:30px}
-    nav a{color:#ccc;text-decoration:none;font-family:Asap,Arial,sans-serif;font-size:.95rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;transition:color .2s}
-    nav a:hover,nav a.active{color:#ff7c07}
-    .gb-hero{background:linear-gradient(135deg,#1a0010 0%,#3d0030 50%,#1a0010 100%);color:#fff;text-align:center;padding:60px 20px 50px;position:relative;overflow:hidden}
-    .gb-hero::before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:repeating-linear-gradient(45deg,transparent,transparent 40px,rgba(166,20,98,.05) 40px,rgba(166,20,98,.05) 80px);pointer-events:none}
-    .hero-badge{display:inline-block;background:#ff7c07;color:#fff;padding:6px 18px;border-radius:20px;font-size:.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px}
-    .gb-hero h1{font-family:Asap,Arial,sans-serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:700;letter-spacing:-1px;line-height:1.1}
-    .gb-hero h1 span{color:#ff7c07}
-    .gb-section{max-width:800px;margin:0 auto;padding:60px 40px}
-    .section-label{display:inline-block;background:rgba(255,124,7,.15);color:#ff7c07;font-family:Asap,Arial,sans-serif;font-size:.75rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:18px}
-    h2{font-family:Asap,Arial,sans-serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:700;color:#a61462;margin-bottom:36px;line-height:1.2}
-    #HCB_comment_box{color:#333;font-family:Asap,Arial,sans-serif}#HCB_comment_box a{color:#a61462}#HCB_comment_box a[href*="feed"],#HCB_comment_box .hcb-rss{display:none!important}#HCB_comment_box .hcb-signup-link,#HCB_comment_box a[href*="htmlcommentbox.com/register"],#HCB_comment_box a[href*="htmlcommentbox.com/signup"]{display:none!important}
-    footer{background:#0d0d0d;color:#555;text-align:center;padding:30px 20px;font-size:.9rem}
-    footer span{color:#ff7c07}
-    .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;z-index:200}
-    .hamburger span{display:block;width:26px;height:3px;background:#ccc;border-radius:2px;transition:all .3s}
-    .hamburger.open span:nth-child(1){transform:translateY(8px) rotate(45deg)}
-    .hamburger.open span:nth-child(2){opacity:0}
-    .hamburger.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
-    @media(max-width:700px){nav{padding:16px 20px;height:70px}.logo img{height:90px}.hamburger{display:flex}nav ul{display:none;position:absolute;top:70px;left:0;right:0;background:#1a0010;flex-direction:column;gap:0;padding:10px 0;z-index:150;box-shadow:0 8px 20px rgba(0,0,0,.4)}nav ul.open{display:flex}nav ul li a{display:block;padding:14px 28px;border-bottom:1px solid rgba(255,255,255,.06)}.gb-section{padding:40px 20px}}
+    *{margin:0;padding:0;box-sizing:border-box}body{font-family:Asap,Arial,sans-serif;color:#343434;background:#f8f8f8}nav{background:#1a0010;padding:16px 40px;height:110px;overflow:visible;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}.logo img{height:156px;width:auto}nav ul{list-style:none;display:flex;gap:30px}nav a{color:#ccc;text-decoration:none;font-family:Asap,Arial,sans-serif;font-size:.95rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;transition:color .2s}nav a:hover,nav a.active{color:#ff7c07}.gb-hero{background:linear-gradient(135deg,#1a0010 0%,#3d0030 50%,#1a0010 100%);color:#fff;text-align:center;padding:60px 20px 50px;position:relative;overflow:hidden}.gb-hero::before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:repeating-linear-gradient(45deg,transparent,transparent 40px,rgba(166,20,98,.05) 40px,rgba(166,20,98,.05) 80px);pointer-events:none}.hero-badge{display:inline-block;background:#ff7c07;color:#fff;padding:6px 18px;border-radius:20px;font-size:.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px}.gb-hero h1{font-family:Asap,Arial,sans-serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:700;letter-spacing:-1px;line-height:1.1}.gb-hero h1 span{color:#ff7c07}.gb-section{max-width:800px;margin:0 auto;padding:60px 40px}.section-label{display:inline-block;background:rgba(255,124,7,.15);color:#ff7c07;font-family:Asap,Arial,sans-serif;font-size:.75rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:18px}h2{font-family:Asap,Arial,sans-serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:700;color:#a61462;margin-bottom:36px;line-height:1.2}.gb-field{margin-bottom:18px}.gb-field label{display:block;font-weight:700;font-size:.85rem;color:#343434;margin-bottom:6px;letter-spacing:.3px}.gb-field input,.gb-field textarea{width:100%;padding:12px 14px;border:1.5px solid #ddd;border-radius:6px;font-family:Asap,Arial,sans-serif;font-size:.95rem;color:#343434;background:#fff;transition:border-color .2s;box-sizing:border-box}.gb-field input:focus,.gb-field textarea:focus{outline:none;border-color:#a61462}.gb-field textarea{resize:vertical;min-height:120px}.gb-submit{background:#a61462;color:#fff;border:none;padding:13px 32px;border-radius:6px;font-family:Asap,Arial,sans-serif;font-size:.95rem;font-weight:700;cursor:pointer;letter-spacing:.5px;transition:background .2s}.gb-submit:hover{background:#8a1054}.gb-bedankt{background:#f0faf0;border:1.5px solid #a8d5a2;border-radius:8px;padding:24px;color:#2d6a4f;font-weight:700;text-align:center;font-size:1rem;margin-bottom:20px}.gb-scheiding{border:none;border-top:1px solid #e8d0e0;margin:50px 0}.gb-reacties-lijst{margin-top:8px}.gb-reactie-item{background:#fff;border-radius:10px;padding:24px;margin-bottom:16px;box-shadow:0 2px 12px rgba(166,20,98,.07);border-left:4px solid #a61462}.gb-reactie-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.gb-reactie-naam{font-weight:700;color:#1a0010;font-size:.95rem}.gb-reactie-datum{color:#999;font-size:.82rem}.gb-reactie-tekst{color:#444;line-height:1.65;font-size:.95rem}.gb-geen-reacties{color:#999;font-style:italic;padding:20px 0}footer{background:#0d0d0d;color:#555;text-align:center;padding:30px 20px;font-size:.9rem}footer a{color:#ff7c07;text-decoration:none}footer span{color:#ff7c07}.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;z-index:200}.hamburger span{display:block;width:26px;height:3px;background:#ccc;border-radius:2px;transition:all .3s}.hamburger.open span:nth-child(1){transform:translateY(8px) rotate(45deg)}.hamburger.open span:nth-child(2){opacity:0}.hamburger.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media(max-width:700px){nav{padding:16px 20px;height:70px}.logo img{height:90px}.hamburger{display:flex}nav ul{display:none;position:absolute;top:70px;left:0;right:0;background:#1a0010;flex-direction:column;gap:0;padding:10px 0;z-index:150;box-shadow:0 8px 20px rgba(0,0,0,.4)}nav ul.open{display:flex}nav ul li a{display:block;padding:14px 28px;border-bottom:1px solid rgba(255,255,255,.06)}.gb-section{padding:40px 20px}}
   </style>
 </head>
 <body>
@@ -39,31 +16,39 @@
     <ul id="nav-menu">
       <li><a href="index.html#nieuws">Nieuws</a></li>
       <li><a href="index.html#agenda">Agenda</a></li>
-      <li><a href="fotos.html">Foto's</a></li>
+      <li><a href="fotos.html">Foto’s</a></li>
       <li><a href="erelijst.html">Erelijst</a></li>
       <li><a href="gastenboek.html" class="active">Gastenboek</a></li>
       <li><a href="mailto:info@obvionracingteam.nl?subject=Graag%20contact">Contact</a></li>
     </ul>
   </nav>
   <div class="gb-hero">
-    <div class="hero-badge">✍️ Gastenboek</div>
+    <div class="hero-badge">&#9997;&#65039; Gastenboek</div>
     <h1>Laat een <span>berichtje</span> achter</h1>
   </div>
   <div class="gb-section">
-    <div class="section-label">✍️ Gastenboek</div>
-    <h2>Reacties van bezoekers</h2>
-    <script>hcb_user={comments_header:"Reacties",name_label:"Naam",content_label:"Schrijf een reactie...",submit:"Versturen",logout_link:"[uitloggen]",admin_link:"[beheer]",no_comments_msg:"Nog geen reacties. Wees de eerste!",add:"Laat een reactie achter",again:"Nog een reactie plaatsen",rss:"",said:"schreef:",prev_page:"← Vorige",next_page:"Volgende →",showing:"Toont",to:"t/m",website_label:"website (optioneel)",email_label:"e-mail",anonymous:"Anoniem",mod_label:"(moderator)",subscribe:"E-mail mij reacties",add_image:"Afbeelding toevoegen",are_you_sure:"Wil je deze reactie melden als ongepast?",reply:"Reageer",flag:"Meld",like:"Leuk",days_ago:"dagen geleden",hours_ago:"uur geleden",minutes_ago:"minuten geleden",within_the_last_minute:"zojuist",msg_thankyou:"Bedankt voor je reactie!",msg_approval:"LET OP: Deze reactie wordt pas gepubliceerd na goedkeuring.",msg_approval_required:"Bedankt voor je reactie! Die verschijnt zodra een moderator hem heeft goedgekeurd.",err_bad_html:"Je reactie bevat ongeldige HTML.",err_bad_email:"Voer een geldig e-mailadres in.",err_too_frequent:"Wacht even voor je opnieuw reageert.",err_comment_empty:"Je reactie was leeg en is niet geplaatst.",err_denied:"Je reactie is niet geaccepteerd.",err_unknown:"Je reactie is geblokkeerd om onbekende reden. Meld dit aan de beheerder.",err_spam:"Je reactie is als spam gedetecteerd.",err_blocked:"Je reactie is geblokkeerd door sitebeleid.",MAX_CHARS:4096,RELATIVE_DATES:true};</script>
-    <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> <span id="hcb-loading">Reacties laden...</span></div><script>setTimeout(function(){var el=document.getElementById("hcb-loading");if(el&&el.parentNode&&!document.querySelector(".hcb-entry,#HCB_form")){el.textContent="De reacties konden niet worden geladen. Probeer de pagina te herladen.";}},8000);</script>
-    <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
-    <script type="text/javascript" id="hcb">if(!window.hcb_user){hcb_user={};}(function(){var s=document.createElement("script"),l=hcb_user.PAGE||(""+(window.location)).replace(/'/g,"%27"),h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src",h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod="+encodeURIComponent('$1$wq1rdBcg$dz3H1uuYHZChrop70EL9e/')+"&opts=16798&num=10&ts="+Date.now());if(typeof s!="undefined")document.getElementsByTagName("head")[0].appendChild(s);})();</script>
-
-  </div>
+    <div class="section-label">&#9997;&#65039; Laat een bericht achter</div>
+    <h2>Schrijf in het gastenboek</h2>
+    <div id="gb-form-wrap">
+      <form id="gb-form">
+        <input type="hidden" name="access_key" value="022a6427-8a3c-476c-a439-a1c51434201d">
+        <input type="hidden" name="subject" value="Nieuw gastenbericht – Obvion Racing Team">
+        <input type="hidden" name="botcheck" value="">
+        <div class="gb-field"><label>Naam *</label><input type="text" name="name" required placeholder="Jouw naam"></div>
+        <div class="gb-field"><label>E-mail (optioneel, niet zichtbaar voor anderen)</label><input type="email" name="email" placeholder="jouw@email.nl"></div>
+        <div class="gb-field"><label>Bericht *</label><textarea name="message" required rows="5" placeholder="Schrijf hier je bericht..."></textarea></div>
+        <button type="submit" class="gb-submit">Verstuur bericht</button>
+      </form>
+    </div>
+    <hr class="gb-scheiding">
+    <div class="section-label">&#128172; Reacties</div>
+    <h2>Berichten van bezoekers</h2>
+<p class="gb-geen-reacties">Nog geen berichten. Wees de eerste!</p>  </div>
   <footer>
-    <p>&copy; 2026 Obvion Racing Team · <a href="index.html" style="color:#ff7c07;text-decoration:none;">Terug naar homepage</a> <span>🚴</span></p>
+    <p>&copy; 2026 Obvion Racing Team &middot; <a href="index.html" style="color:#ff7c07;text-decoration:none;">Terug naar homepage</a> <span>&#x1F6B4;</span></p>
   </footer>
   <script>
-    function toggleNav(){var m=document.getElementById("nav-menu");var h=document.getElementById("hamburger");m.classList.toggle("open");h.classList.toggle("open");}
-    document.querySelectorAll("#nav-menu a").forEach(function(a){a.addEventListener("click",function(){document.getElementById("nav-menu").classList.remove("open");document.getElementById("hamburger").classList.remove("open");});});
+    document.getElementById("gb-form").addEventListener("submit",function(e){e.preventDefault();var btn=this.querySelector(".gb-submit");btn.textContent="Versturen...";btn.disabled=true;var data=new FormData(this);fetch("https://api.web3forms.com/submit",{method:"POST",body:data}).then(function(r){return r.json();}).then(function(d){if(d.success){document.getElementById("gb-form-wrap").innerHTML="<div class=\"gb-bedankt\">&#10003; Bedankt voor je bericht! Het verschijnt na goedkeuring.</div>";}else{btn.textContent="Verstuur bericht";btn.disabled=false;alert("Er is iets misgegaan. Probeer opnieuw.");}}).catch(function(){btn.textContent="Verstuur bericht";btn.disabled=false;alert("Verbindingsfout. Controleer je internet.");});});function toggleNav(){var m=document.getElementById("nav-menu");var h=document.getElementById("hamburger");m.classList.toggle("open");h.classList.toggle("open");}document.querySelectorAll("#nav-menu a").forEach(function(a){a.addEventListener("click",function(){document.getElementById("nav-menu").classList.remove("open");document.getElementById("hamburger").classList.remove("open");});});
   </script>
 </body>
 </html>
