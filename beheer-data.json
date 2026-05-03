@@ -3,7 +3,7 @@
   "email": "info@obvionracingteam.nl",
   "opgericht": "2026",
   "stat-leden": "22",
-  "stat-ritten": "1x",
+  "stat-ritten": "2x",
   "stat-km": "15k+",
   "strava-embed": "https://www.strava.com/clubs/102493/latest-rides/6e8915f2c72396f86a676130943db13826b80e52?show_rides=false",
   "strava-rides": "false",
@@ -64,18 +64,16 @@
       "naam": "Ralph / Ausdauer",
       "omschrijving": "3x pech, maar blijven gaan. Dan ben je een echte 💪🏼",
       "cat": "Prestatie"
+    },
+    {
+      "jaar": "2026",
+      "icoon": "🏆",
+      "naam": "Klimgeiten 🐐🚵🏻‍♂️",
+      "omschrijving": "Week 17: 6000+ Hoogtemeters voor onze club",
+      "cat": "Prestatie"
     }
   ],
   "_ev": [
-    {
-      "datum": "2026-04-25",
-      "badge": "Toertocht",
-      "titel": "Grenspalenklassieker",
-      "desc": "Reusel - 90km 🚴‍♂️ - Oude Brandtoren 09:30",
-      "loc": "51.44,5.48",
-      "gpx": "",
-      "inschrijving": "Individueel (met code)"
-    },
     {
       "datum": "2026-05-30",
       "badge": "Toertocht",
