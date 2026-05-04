@@ -110,13 +110,6 @@
   "_dl": [],
   "_nieuws": [
     {
-      "datum": "2026-03-18",
-      "titel": "Site Live 🥳",
-      "tekst": "Onze mooie fietsclub en de belangrijkse informatie verdienen een plek op het web. Bij deze!",
-      "extra": "",
-      "img": ""
-    },
-    {
       "datum": "2026-04-09",
       "titel": "Seizoen heerlijk afgetrapt 👊🏻",
       "tekst": "Met 10 collega’s genoten we van de NXT Classic: een prachtige rit door het Zuid-Limburgse landschap. Met de lentezon op ons gezicht 😎 en volop gezelligheid onderweg zat de sfeer er vanaf het begin goed in. De route stelde niet teleur: mooie beklimmingen, fraaie vergezichten en een parcours dat bleef verrassen.",
@@ -126,9 +119,16 @@
     {
       "datum": "2026-04-17",
       "titel": "Route wijziging Obvion Limburgs Mooiste",
-      "tekst": "Per executive decision: we gaan van Geel 110km naar Blauw 120km 😎 Yeah! Blauw = Wow!! De inschrijvingen van het ORT worden centraal aangepast.",
+      "tekst": "Per executive decision: we gaan van Geel 110km naar Blauw 120km 👊🏻 Yeah! Blauw = Wow!! De inschrijvingen van het ORT worden centraal aangepast.",
       "extra": "",
       "img": ""
+    },
+    {
+      "datum": "2026-05-04",
+      "titel": "Climate Classic 🪴",
+      "tekst": "Het Obvion Racing Team zal op 19 juni met een groot aantal deelnemers meedoen aan de Climate Classic. Samen fietsen we dan niet alleen een indrukwekkende route, maar geven we ook een krachtig signaal af: wij kiezen voor duurzaamheid, vitaliteit en impact ♻️",
+      "extra": "",
+      "img": "fotos/climate-Classic-social-2160x2160-1-2048x2048.jpg"
     }
   ]
 }
