@@ -100,15 +100,6 @@
       "loc": "50.85,5.69",
       "gpx": "",
       "inschrijving": "Collectief"
-    },
-    {
-      "datum": "2026-05-23",
-      "badge": "Training",
-      "titel": "Trainingsrit voor OLM",
-      "desc": "80km - Rustig aan 😎",
-      "loc": "50.85,5.69",
-      "gpx": "",
-      "inschrijving": "Via chat"
     }
   ],
   "_foto": [
@@ -123,6 +114,18 @@
     {
       "naam": "Grenspalen 2026.jpg",
       "caption": "Aan de start van de Grenspalen Klassieker"
+    },
+    {
+      "naam": "OLM2026.jpg",
+      "caption": "Aan de start van OLM 2026"
+    },
+    {
+      "naam": "Presidenten.jpg",
+      "caption": "El-Presidente en El Vice-Presidente kijken terug op een geslaagd OLM met 120km in de benen"
+    },
+    {
+      "naam": "Supervision.jpeg",
+      "caption": "Presidente Supervisin rust uit tijdens OLM 2026"
     }
   ],
   "_dl": [],
@@ -147,6 +150,13 @@
       "tekst": "Zaterdag staat een (vrij vlakke) gezamenlijke trainingsrit van 80km op het programma als rustige voorbereiding op OLM. Heb je zin om mee te gaan, reageer dan via de Teams chat 'Rondje na het werk'. Het weer zit in ieder geval mee 🌞",
       "extra": "",
       "img": ""
+    },
+    {
+      "datum": "2026-05-31",
+      "titel": "Obvion Limburgs Mooiste",
+      "tekst": "Het Obvion Racing Team beleefde samen met haar gasten en 12.000 andere fietsers een perfecte dag tijdens Obvion Limburgs Mooiste 🤩 Bram Tankink leidde ons als gelegenheids wegkapitein vakkundig om de buien heen. Een top sfeer, prachtige route en gezellige nazit in ons Obvion paviljoen onder het genot van bbq en drankje(s) 🍻 maakten het een geweldige ervaring.",
+      "extra": "",
+      "img": "fotos/IMG_8672.jpeg"
     }
   ]
 }
