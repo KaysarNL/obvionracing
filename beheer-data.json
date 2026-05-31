@@ -55,7 +55,7 @@
       "jaar": "2026",
       "icoon": "🌿",
       "naam": "Groen doen!",
-      "omschrijving": "In de week van 9 maart fietsten we 50kg CO2 reductie bij elkaar",
+      "omschrijving": "In de week van 25 mei fietsten we 250kg CO2 reductie bij elkaar",
       "cat": "MVO"
     },
     {
@@ -69,8 +69,15 @@
       "jaar": "2026",
       "icoon": "🏆",
       "naam": "Klimgeiten 🐐🚵🏻‍♂️",
-      "omschrijving": "Week 17: 6000+ Hoogtemeters voor onze club",
-      "cat": "Prestatie"
+      "omschrijving": "Week 22: 14.000+ Hoogtemeters voor onze club",
+      "cat": "Clubrecord"
+    },
+    {
+      "jaar": "2026",
+      "icoon": "🏆",
+      "naam": "Obvion Limburgs Mooiste 2026",
+      "omschrijving": "Onze langste afstand: 120km",
+      "cat": "Clubrecord"
     }
   ],
   "_ev": [
