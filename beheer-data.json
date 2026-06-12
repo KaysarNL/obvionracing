@@ -85,10 +85,11 @@
       "datum": "2026-06-19",
       "badge": "Toertocht",
       "titel": "Climate Classic",
-      "desc": "Samen fietsen we voor het klimaat 🌿 Heerlen: 07.00 ; Eindhoven 08.45 🚌",
+      "desc": "Samen fietsen we voor het klimaat 🌿 ",
       "loc": "52.09,5.12",
       "gpx": "",
-      "inschrijving": "Individueel"
+      "inschrijving": "Individueel",
+      "startinfo": "🚌 Heerlen: 07.00 ; Eindhoven 08.45 "
     },
     {
       "datum": "2026-09-05",
@@ -97,7 +98,8 @@
       "desc": "Lusjes fietsen vanaf de Cauberg 🚵🏻‍♂️",
       "loc": "50.85,5.69",
       "gpx": "",
-      "inschrijving": "Collectief"
+      "inschrijving": "Collectief",
+      "startinfo": ""
     }
   ],
   "_foto": [
