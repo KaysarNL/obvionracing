@@ -213,11 +213,11 @@ async function laadWeer(w){
   if(diff>15){w.innerHTML='<div class="weather-icon">\uD83D\uDCC5<\/div><div class="weather-unavailable">Voorspelling<br>nog niet<br>beschikbaar<\/div>';return;}
   if(diff<0){w.innerHTML='<div class="weather-icon">\uD83D\uDCD6<\/div><div class="weather-unavailable">Voorbij<\/div>';return;}
   try{
-    var url='https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lon+'&daily=weathercode,temperature_2m_max,temperature_2m_min,windspeed_10m_max&timezone=Europe%2FAmsterdam&start_date='+date+'&end_date='+date;
+    var url='https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lon+'&daily=weathercode,temperature_2m_max,temperature_2m_min&hourly=windspeed_10m&timezone=Europe%2FAmsterdam&start_date='+date+'&end_date='+date;
     var r=await fetch(url),d=await r.json();
     var info=weerInfo(d.daily.weathercode[0]);
-    var tmax=Math.round(d.daily.temperature_2m_max[0]),tmin=Math.round(d.daily.temperature_2m_min[0]),wind=Math.round(d.daily.windspeed_10m_max[0]);
-    w.innerHTML='<div class="weather-icon">'+info.icon+'<\/div><div class="weather-temp">'+tmax+'\u00B0\/'+tmin+'\u00B0<\/div><div class="weather-desc">'+info.desc+'<\/div><div class="weather-wind">\uD83D\uDCA8 '+wind+' km\/u<\/div>';
+    var tmax=Math.round(d.daily.temperature_2m_max[0]),tmin=Math.round(d.daily.temperature_2m_min[0]),wind=Math.round(d.hourly.windspeed_10m[9]);
+    w.innerHTML='<div class="weather-icon">'+info.icon+'<\/div><div class="weather-temp">'+tmax+'\u00B0\/'+tmin+'\u00B0<\/div><div class="weather-desc">'+info.desc+'<\/div><div class="weather-wind">\uD83D\uDCA8 '+wind+' km\/u (09:00)<\/div>';
   }catch(e){w.innerHTML='<div class="weather-unavailable">Niet beschikbaar<\/div>';}
 }
 document.querySelectorAll('.weather-widget[data-date]').forEach(laadWeer);
