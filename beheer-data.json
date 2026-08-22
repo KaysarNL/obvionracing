@@ -82,26 +82,6 @@
   ],
   "_ev": [
     {
-      "datum": "2026-06-19",
-      "badge": "Toertocht",
-      "titel": "Climate Classic",
-      "desc": "Samen fietsen we voor het klimaat 🌿 ",
-      "loc": "52.09,5.12",
-      "gpx": "Climate_Classic_Breda_-_De_Bilt_125_km_route_.gpx",
-      "inschrijving": "Individueel",
-      "startinfo": "🚌 Heerlen: 06.30 ; Eindhoven 08.15 "
-    },
-    {
-      "datum": "2026-09-05",
-      "badge": "Toertocht",
-      "titel": "Philippe Gilbert Cauberg Classic",
-      "desc": "Lusjes fietsen vanaf de Cauberg 🚵🏻‍♂️",
-      "loc": "50.85,5.69",
-      "gpx": "",
-      "inschrijving": "Collectief",
-      "startinfo": ""
-    },
-    {
       "datum": "2026-09-19",
       "badge": "Toertocht",
       "titel": "Mh2d",
@@ -153,13 +133,6 @@
   "_dl": [],
   "_nieuws": [
     {
-      "datum": "2026-05-20",
-      "titel": "Samen trainen voor Obvion Limburgs Mooiste 😎",
-      "tekst": "Zaterdag staat een (vrij vlakke) gezamenlijke trainingsrit van 80km op het programma als rustige voorbereiding op OLM. Heb je zin om mee te gaan, reageer dan via de Teams chat 'Rondje na het werk'. Het weer zit in ieder geval mee 🌞",
-      "extra": "",
-      "img": ""
-    },
-    {
       "datum": "2026-05-31",
       "titel": "Obvion Limburgs Mooiste",
       "tekst": "Het Obvion Racing Team beleefde samen met haar gasten en 12.000 andere fietsers een perfecte dag tijdens Obvion Limburgs Mooiste 🤩 Bram Tankink leidde ons als gelegenheids wegkapitein vakkundig om de buien heen. Een top sfeer, prachtige route en gezellige nazit in ons Obvion paviljoen onder het genot van bbq en drankje(s) 🍻 maakten het een geweldige ervaring.",
@@ -172,6 +145,13 @@
       "tekst": "Het Obvion Racing Team nam gisteren deel aan de Climate Classic. Hiermee vragen ook wij aandacht voor klimaatverandering en roepen we op tot samenwerking aan duurzame initiatieven. Code geel voor warmte en de activering van het 'Nationaal Hitteplan' gaven een toepasselijke context aan deze tour. Om 06.30 werden we opgehaald door onze (klimaat neutrale) bus en reden we naar Breda. Vanuit daar fietsten we 125 km in de brandende ☀️ naar De Bilt op louter de grote plaat. De samenvatting van de dag met dank aan een van onze ORT leden: \"Een Epische Strijd in de Smeltkroes 🥵 van de Climate Classic 🪴 We streden niet alleen tegen de elementen, we streden vóór het klimaat! Een nobele, bijna heilige kruistocht om kilometers te vreten voor een betere wereld.\"\n",
       "extra": "",
       "img": "fotos/Climate CLassic.jpg"
+    },
+    {
+      "datum": "2026-08-22",
+      "titel": "Mh2d",
+      "tekst": "Het Obvion Racing Team maakt zich op voor de afsluiting van een mooi seizoen met vele hoogtepunten. We kijken nu uit naar eind september wanneer we op zaterdag deelnemen aan de Mergelheuvelland 2 daagse 🚵🏻‍♂️👋🏼",
+      "extra": "",
+      "img": ""
     }
   ]
 }
